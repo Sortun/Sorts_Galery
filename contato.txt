@@ -1,0 +1,49 @@
+#search-form {
+    position: relative;
+    width: 100%;
+    margin-Left: auto;
+    margin-Right: auto;
+    padding-top: 5em;
+    text-align:left;
+}
+
+#search-form h1{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+#search-form p{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+#search-form div{
+    padding-top: 10px;
+    margin-left: 50px;
+}
+
+#search-form input, textarea{
+    background-color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 20px
+}
+
+#search-form input[type=submit] {
+cursor: pointer; /*Para o cursor virar um dedo apontando (igual o de link)*/
+}
+#search-form input[type=submit]:hover{
+    color:#0d3c7e;
+}
+
+#search-form .sugestao{
+    width: 600px;
+}

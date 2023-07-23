@@ -1,0 +1,264 @@
+body { 
+    margin: 0px;
+    background-color: rgb(247, 245, 244);
+ }
+
+h1,h2,h3,h4,h5,h6,span, p { 
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*-----------------Header-----------------*/
+.container {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right:  auto;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    height: 75px;
+    width: 1920px;
+    z-index: 1;
+    background-color: rgb(247, 245, 244); 
+    border-bottom: 0.5px solid rgb(209, 209, 209); 
+}
+
+nav:after{
+    clear:both;
+    content: "";
+    display: block;
+}
+
+.nav-container{
+    padding-right: 10px;
+    max-width: 1900px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo{
+    width: 200px;
+    height: 75px;
+    margin-top: 0px;
+    float: left;
+}
+
+.nav-container ul {
+    padding-left: 0;
+    float: left;
+    height: 75px;
+    line-height: 75px;
+    margin: 0 ;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 30px;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: rgb(65, 65, 65); 
+    transition: .2s;
+}
+
+.nav-container li a:hover {
+    color: #950720;
+}
+.pesquisa{
+    background-color: white;
+    border-radius: 5px;
+    border-color:rgba(0, 0, 0, 0.101);
+    padding: 5px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 300px;
+    float: right;
+    margin-right: 20px;
+}
+
+.pesquisabotao{
+    background-color: white;
+    border-radius: 5px;
+    border-color:rgba(0, 0, 0, 0.101);
+    padding: 5px 20px;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 80px;
+    float: right;
+    margin-right: 10px;
+    color: #646464;
+}
+
+.pesquisabotao:hover{
+    color: #950720;
+}
+
+.form{
+    color: white;
+}
+/*-----------------Header------------------*/
+
+
+/*-----------------Home--------------------*/
+#inicio-banner
+{
+    background: url('../sort_galery/imagens/home.png') ;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover; 
+}
+
+#home {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+   color: #646464; 
+}
+
+#home{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*-----------------Home--------------------*/
+
+
+/*-----------------Pinturas----------------*/
+.imagem{
+    width: auto;
+    height:auto;
+    margin-right: 10px;
+}
+
+.descricao{
+    width: 1530px;
+    height: auto;
+    overflow: hidden;
+}
+
+#layout_1, #layout_2, #layout_3, #layout_4, #layout_5{
+    display: flex;
+    padding: 90px;
+    height: auto;
+    padding-top:0px;
+}
+
+.imagem #mona{
+    height: 822px;
+    width: 552px;
+}
+
+.imagem #grito{
+    width: 667px;
+    height: 844px;
+}
+
+.imagem #memoria{
+    width: 552px;
+    height: 405px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 18px; 
+}
+
+hr{
+    text-align: center;
+    width: 1700px;
+    height:10px;
+    background-color: rgb(219, 219, 219);
+    background-image: linear-gradient(90deg, black, transparent);
+    border: 0;
+    height: 1px;
+    margin-bottom: 80px;
+}
+
+.descricao p{
+    margin: 20px;
+    font-size: 20px;  
+}
+
+h2{   
+    color: #0d3c7e;
+    margin-top: 120px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.descricao h1{
+    color: #0d3c7e;
+    
+}
+
+.descricao h3 {
+    color: #0d3c7e;
+    margin: 25px;
+    font-size: 25px;
+}
+
+blockquote{
+    font-size: 30px;
+    text-align: center;
+}
+
+figcaption a{
+    text-decoration: none;
+    color: black;
+}
+/*-----------------Pinturas-----------------*/
+
+
+/*-----------------Footer-------------------*/
+footer{
+    border-top: 0.5px solid rgb(209, 209, 209); 
+    height: 75px;
+    width: auto;
+   text-align: center;
+   border-bottom: 1px solid rgba(233, 225, 222, 1); 
+}
+
+.end{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 25px;
+    color:#0d3c7e;
+}
+/*-----------------Footer------------------*/
+
+
+/*-----------------Contato-----------------*/
+#contato-banner{
+    background: url('../sort_galery/imagens/desenvolvimento.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 75px;
+    height: 900px;
+}
+
+/*----------------Contato--------------------*/
