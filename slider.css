@@ -1,0 +1,121 @@
+/*Slider*/
+
+section #slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.banner {
+    margin-top: 150px;
+    width: 100%; /* Largura 100%, mas não ultrapassa 1920px */
+        height: auto;
+    display: flex;
+    transition: margin-left 1.0s;
+
+}
+
+.banner input, .img-mobile{
+    display:none ;
+}
+
+.slide-box{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1.0s;
+    flex-shrink: 0;
+}
+
+.slide-box img{
+    width: 100%;
+}
+
+.nav-manual, .nav-auto{
+    position: absolute;
+    right: 1%;
+    margin-top: 14%; /*ajuste*/
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 0.1px solid rgba(255, 255, 255, 0.549);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 5px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+    background-color: rgb(255, 255, 255);
+}
+#radio3:checked ~ .nav-auto .auto-btn3{
+    background-color: rgb(255, 255, 255);
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -200%;
+}
+
+#radio1:checked ~ .banner {
+    transform: translateX(0%);
+}
+
+#radio2:checked ~ .banner {
+    transform: translateX(-100%);
+}
+
+#radio3:checked ~ .banner {
+    transform: translateX(-200%);
+}
+
+
+@media screen and (max-width: 900px){
+    * {
+
+        overflow-x: hidden; /* Adiciona esta linha para evitar a rolagem horizontal */
+        max-width: 900px;
+      }
+    .img-desktop{
+        display: none;
+    }
+    .img-mobile{
+        display: block;
+    }
+
+    .nav-auto, .nav-manual{
+        margin-top: 31%;
+    }
+
+    .nav-manual .manual-btn, .nav-auto div{
+    padding: 4px;
+    }
+    .banner {
+        margin-top: 150px;
+      }
+      
+}
